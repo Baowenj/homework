@@ -1,6 +1,7 @@
 window.onload = function(){
     onload1();    
     onload2();
+    onload3();
 }
 
 
@@ -187,5 +188,29 @@ function onload2(){
         }
     }
 }
+//搜索框提示功能
+function onload3(){
+  var search =document.getElementsByClassName('search')[0];
+  var grec = document.getElementsByClassName('grec')[0];
+  //输入框聚焦时显示提示框
+  search.onfocus = () => {
+    grec.style.display = 'block';
+  }
+
+  //输入框失去焦点时隐藏提示框
+  search.onblur = () => {
+    grec.style.display = 'none';
+  }
+}
+
+function onload4(){
+    var img = document.getElementById("img");
+    var bigshowwrapper=document.getElementsByClassName("bigshowwrapper")[0];
+
+    img.onclick=()=>{
+    bigshowwrapper.li.class="2"
+    }
+}
+
 
 
